@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <h1 class="title">TIC TAC TOE</h1>
+
+      <div class="board">
+        <div class="board-square" id="1"></div>
+        <div class="board-square" id="2"></div>
+        <div class="board-square" id="3"></div>
+        <div class="board-square" id="4"></div>
+        <div class="board-square" id="5"></div>
+        <div class="board-square" id="6"></div>
+        <div class="board-square" id="7"></div>
+        <div class="board-square" id="8"></div>
+        <div class="board-square" id="9"></div>
+      </div>
+
+      <h3 class="turn">It's X's Turn</h3>
+      <button class="restart-btn">Restart</button>
+    </div>
+
+    <div class="score-container">
+      <div class="score-info">
+        <h4>X (YOU)</h4>
+        <h3 class="score x-score"></h3>
+      </div>
+      <div class="score-info">
+        <h4>TIES</h4>
+        <h3 class="score tie-score"></h3>
+      </div>
+      <div class="score-info">
+        <h4>O (CPU)</h4>
+        <h3 class="score o-score"></h3>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
