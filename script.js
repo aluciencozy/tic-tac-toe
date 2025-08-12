@@ -132,6 +132,8 @@ function checkWinner(char) {
     renderScores();
   }
 
+  if (char === "0") return;
+
   // If no one has won and all squares are filled its a tie
   if (!win && squaresFilled === 9 && char === "X") {
     turn.textContent = `It's a Tie!`;
