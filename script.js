@@ -133,7 +133,7 @@ function checkWinner(char) {
   }
 
   // If no one has won and all squares are filled its a tie
-  if (!win && squaresFilled === 9) {
+  if (!win && squaresFilled === 9 && char === "X") {
     turn.textContent = `It's a Tie!`;
     boardSquare.forEach((square) => {
       square.classList.add("marked");
